@@ -10,7 +10,7 @@ class MirrOS(App):
         self.label = Label()
 
         # Schedule the update function to be called every minute
-        Clock.schedule_interval(self.update, 1  # 60 seconds = 1 minute
+        Clock.schedule_interval(self.update, 1) # 60 seconds = 1 minute
 
         return self.label
 
