@@ -26,7 +26,8 @@ def setLang(lang):
             print('Set language to : ', switcher.get(lang, "Invalid language"))
 
 
-def getDate(DATE_FORMAT):
+def getDate():
+    setLang(LANGUAGE)
     switcher = {
         "1" : "%d %m %Y",
         "2" : "%m %f %Y",
