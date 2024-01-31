@@ -15,7 +15,7 @@ UNITS = os.environ.get("UNITS")
 weathermap_settings = {"country_code": COUNTRY_CODE, "city_name": CITY_NAME, "units": UNITS}
 
 if not OPEN_WEATHER_API_KEY or not COUNTRY_CODE or not CITY_NAME or not UNITS:
-    raise Exception("Please set the environment variables in .env file")
+    raise Exception("Please set the weather's environment variables in .env file")
 
 
 def getWeather():
