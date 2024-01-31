@@ -25,7 +25,6 @@ def setLang(lang):
             print("Invalid language")
         case _:
             locale.setlocale(locale.LC_TIME, switcher.get(lang))
-            print('Set language to : ', switcher.get(lang, "Invalid language"))
 
         # Get UTC from country code
 def get_utc(country_code):
