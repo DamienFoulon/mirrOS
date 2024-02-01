@@ -1,8 +1,7 @@
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.clock import Clock
-from weather import getWeather
-from date import getDate, getTime
+from setram import getNextTramway
 
 class MirrOS(App):
     def build(self):
@@ -16,7 +15,7 @@ class MirrOS(App):
 
     def update(self, *args):
         # Update the label text with the current date and time
-        self.label.text = f"Nous sommes le {getDate()} et il est {getTime()}"
+        self.label.text = f"{getNextTramway()}"
 
 if __name__ == '__main__':
     MirrOS().run()
